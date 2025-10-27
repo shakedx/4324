@@ -113,10 +113,10 @@ function ParametrsPage() {
                 <tbody>
                 {filteredParameters.map(param => (
                     <tr key={param.id}>
-                        <td><span className="mini-tag">{param.id}</span></td>
+                        <td><span className="mini-tag-id">{param.id}</span></td>
                         <td>{param.value}</td>
                         <td><span className="mini-tag">{param.name}</span></td>
-                        <td>{param.description}</td>
+                        <td className="description">{param.description}</td>
                         <td>
                                 <span className={param.status === 'Активен' ? 'status-active' : 'status-inactive'}>
                                     {param.status}
@@ -134,14 +134,14 @@ function ParametrsPage() {
                         {activeParams.map(p => (
                             <span className="mini-tag" key={p.id}>{p.name}</span>
                         ))}
-                        <span className="mini-tag">+2</span>
+
                     </div>
                 </div>
                 <div>
                     <div className="bottom-label">Неактивные параметры</div>
                     <div className="bottom-tags">
                         {inactiveParams.map(p => (
-                            <span className="mini-tag" key={p.id}>{p.name}</span>
+                            <span className="mini-tag-inactive" key={p.id}>{p.name}</span>
                         ))}
                     </div>
                 </div>

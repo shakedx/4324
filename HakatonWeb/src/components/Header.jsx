@@ -6,17 +6,14 @@ import ExecutorLogo from '../assets/Image/ExecutorsLogo.svg';
 import BalancerLogo from '../assets/Image/BalancerLogo.svg';
 import DashboardLogo from '../assets/Image/DashboardLogo.svg';
 import ParametresLogo from '../assets/Image/ParametresLogo.svg';
-
+import ZunamiLogo from '../assets/Image/zunamiLogo.svg';
 function Header() {
     return (
         <aside className="sidebar">
             {/* Логотип */}
             <div className="sidebar-header">
                 <div className="sidebar-logo">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="2">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                        <polyline points="14 2 14 8 20 8"/>
-                    </svg>
+                    <img src={ZunamiLogo} alt="ZunamiLogo" style={{width:'50px',height:'50px'}} />
                     <span className="sidebar-title">Zunami Executor</span>
                 </div>
             </div>

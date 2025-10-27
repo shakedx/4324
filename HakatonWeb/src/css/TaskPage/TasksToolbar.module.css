@@ -124,10 +124,10 @@
 
 .btnPrimary {
     border: none;
-    background-color: #000;
+    background-color: #030213;
     color: white;
 }
 
 .btnPrimary:hover {
-    background-color: #1a1a1a;
+    background-color: grey;
 }
